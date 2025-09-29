@@ -17,8 +17,8 @@ struct ContentView: View {
                 .font(.title2).bold()
 
             LevelMeterView(level: audio.rmsLevel)
-                .frame(height: 160)
-                .padding(.horizontal, 24)
+                .frame(height: 60)
+                .padding(.horizontal)
 
             Text(String(format: "Nível: %.2f", audio.rmsLevel))
                 .font(.headline)
